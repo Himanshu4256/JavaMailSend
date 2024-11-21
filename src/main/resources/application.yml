@@ -1,0 +1,33 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  mail:
+    properties:
+      mail:
+        debug : 'false'
+        smtp:
+          ssl:
+            trust: smtp.gmail.com
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    host: smtp.gmail.com
+    username: himanshu@gmail.com(correct mail)
+    protocol: smtp
+    test-connection: 'false'
+    port: '587'
+    password: generate_app_pssword_for_gmail it'll generate Like - (espv ydrf usbr jduv)
+  application:
+    name: JavaMailSend
+  datasource:
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/sys
+server:
+  port: '7086'
